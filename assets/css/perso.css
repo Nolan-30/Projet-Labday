@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(0, 0, 65);
+  color: white;
+}
+* {
+  scroll-behavior: smooth;
+}
+.vert {
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-left: 2%;
+}
+
+.personnages-container {
+  display: flex; /* Active Flexbox */
+  justify-content: flex-start; /* Commence l'alignement à gauche */
+  margin-left: 2%; /* Aligne avec le titre h2 */
+  gap: 130px;
+  margin-top: 1%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.personnage-carte {
+  display: flex;
+  flex-direction: column; /* Empile le nom et l'image verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+.nom-perso {
+  color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
+  font-style: italic;
+  font-style: bold;
+  font-size: 20px;
+  margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
+  text-align: center;
+}
+
+.nom-perso a:hover {
+  color: green;
+}
+.nom-perso a {
+  color: white;
+  text-decoration: none;
+}
+
+.personnage-carte img {
+  border: 3px solid rgb(73, 73, 73);
+  border-radius: 16px;
+  margin: 0;
+  border-bottom: 10px solid rgb(73, 73, 73);
+}
+
+.description-perso {
+  border-top: 0;
+  display: flex;
+
+  gap: 130px;
+  margin-top: -20px;
+}
+.description-perso p {
+  /* couleur */
+
+  border: 3px solid rgb(73, 73, 73);
+
+  border-radius: 10px;
+  border-top: 0;
+
+  color: rgb(255, 255, 255);
+
+  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* alignement du txt */
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px;
+}
