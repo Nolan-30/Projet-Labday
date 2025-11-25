@@ -1,0 +1,142 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* pr mettre le Texte en gras */
+header p {
+  margin-left: 2%;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menu {
+  margin: 0 auto;
+
+  border-radius: 20px 20px 20px 20px;
+
+  padding: 15px;
+
+  display: flex;
+  gap: 20px;
+  gap: 40px;
+
+  width: 400px;
+  margin-left: -55%;
+}
+
+header .menu li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+.menu li a:hover {
+  color: red;
+}
+
+.bouton {
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.bouton.rouge {
+  background-color: rgb(135, 206, 235);
+  color: #fff;
+}
+/****************************** ¨PARTIE HISTOIRE ********************************/
+/****************************** ¨PARTIE HISTOIRE ********************************/
+/****************************** ¨PARTIE HISTOIRE ********************************/
+
+.titre-histoire {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+}
+.titre-histoire h1:hover {
+  color: red;
+}
+
+.container-origine-murs-themes {
+  margin-top: 5%;
+  margin-left: 5%;
+
+  background-color: rgb(0, 0, 45);
+  border-radius: 10px;
+}
+.container-origine-murs-themes h2 {
+  color: rgb(165, 0, 0);
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.container-origine-murs-themes p {
+  margin-left: 2%;
+}
+
+.titre h2 {
+  font-size: 30px;
+}
+
+.theme-container {
+  /* refaire l'alignement prsk faudra ajt un trait au debut de chaque box des themes*/
+
+  display: flex;
+  gap: 200px;
+
+  border-radius: 10px;
+  background-color: rgb(0, 0, 45);
+}
+
+.box-theme-indiv {
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+.theme-titre h3 {
+  margin-left: 50px;
+}
+
+.theme-titre p {
+  min-width: 300px;
+  max-width: 300x;
+}
+.fin-page {
+  margin-top: 5%;
+}
+.fin-page h3,
+p {
+  text-align: center;
+}
+
+/****************************** ¨FIN PARTIE HISTOIRE ********************************/
+/****************************** ¨FIN PARTIE HISTOIRE ********************************/
+/****************************** ¨FIN PARTIE HISTOIRE ********************************/
+
+/****************************** ¨PARTIE VIDEOS ********************************/
+/******************************  PARTIE VIDEOS ********************************/
+/****************************** ¨PARTIE VIDEOS ********************************/
+
+/****************************** ¨FIN PARTIE VIDEOS ********************************/
+/******************************  FIN PARTIE VIDEOS ********************************/
+/****************************** ¨FIN PARTIE VIDEOS ********************************/
