@@ -1,0 +1,157 @@
+/* --- HEADER --- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  margin-left: 2%;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menu {
+  margin: 0 auto;
+
+  border-radius: 20px 20px 20px 20px;
+
+  padding: 15px;
+
+  display: flex;
+  gap: 20px;
+  gap: 40px;
+  width: 400px;
+  margin-left: -55%;
+}
+
+header .menu li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+
+.presentation h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.presentation img {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* --- FIN DU HEADER --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; 
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.seasons-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* --- TITRE --- */
+.page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.season-card {
+    background-color: #11141d; 
+    border-radius: 6px;
+    margin-bottom: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+/* --- BORDURES COLORÉES --- */
+.border-green { border-left-color: #107c41; }
+.border-yellow { border-left-color: #dcb12d; }
+.border-blue { border-left-color: #1e66f5; }
+.border-red { border-left-color: #c92a2a; }
+
+.season-thumbnail {
+    background-color: #383838; 
+    width: 280px;
+    height: 160px;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.season-thumbnail span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* --- CONTENU TEXTE --- */
+.season-content {
+    flex: 1; 
+}
+
+.season-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.description {
+    color: #aeb4c0; 
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #6e7681; 
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .season-card {
+        flex-direction: column; /* Empile image et texte sur mobile */
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .season-thumbnail {
+        width: 100%; 
+        height: 200px;
+    }
+}

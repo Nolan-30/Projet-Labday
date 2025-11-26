@@ -1,0 +1,212 @@
+/* --- HEADER --- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  margin-left: 2%;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menu {
+  margin: 0 auto;
+
+  border-radius: 20px 20px 20px 20px;
+
+  padding: 15px;
+
+  display: flex;
+  gap: 20px;
+  gap: 40px;
+  width: 400px;
+  margin-left: -55%;
+}
+
+header .menu li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
+
+.presentation h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.presentation img {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* --- FIN DU HEADER --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Fond gris foncé global */
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.titans-container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* --- TITRE DE LA PAGE --- */
+.page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+/* --- STRUCTURE DE LA CARTE TITAN --- */
+.titan-card {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 12px;
+    overflow: hidden; /* Important pour que l'image respecte les bords arrondis */
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    min-height: 320px; /* Hauteur minimale pour l'équilibre */
+}
+
+.titan-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.card-visual {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-visual span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Couleurs spécifiques des images */
+.visual-assaillant {
+    background-color: #9b2226; /* Rouge sombre (Assaillant) */
+}
+
+.visual-colossal {
+    background-color: #9b2226; /* Rouge sombre (Colossal) */
+}
+
+.visual-armored {
+    background-color: #d4a373; /* Beige/Marron clair (Cuirassé) */
+}
+
+
+/* --- PARTIE CONTENU (TEXTE) --- */
+.card-content {
+    flex: 1; 
+    background-color: #0d1321; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Typographie du contenu */
+.titan-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.titan-holder {
+    font-size: 0.95rem;
+    color: #8d99ae; 
+    margin-bottom: 20px;
+}
+
+.titan-holder strong {
+    color: #edf2f4;
+}
+
+.titan-desc {
+    color: #bdc3c7; 
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* --- STATISTIQUES (Icones) --- */
+.titan-stats {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.titan-stats li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+/* Couleur rouge pour les stats de l'assaillant */
+.stats-red li {
+    color: #ef233c; 
+}
+
+/* --- LISTE "AUTRES" EN BAS --- */
+.others-list {
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .titan-card, 
+    .titan-card.reverse {
+        flex-direction: column; /* Les cartes s'empilent sur mobile */
+    }
+
+    .card-visual {
+        min-height: 200px;
+    }
+    
+    .card-visual span {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+}
