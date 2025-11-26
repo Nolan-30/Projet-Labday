@@ -5,18 +5,79 @@ body {
 * {
   scroll-behavior: smooth;
 }
+
+/* --- HEADER --- */
+
+.degrader-blanc {
+  background: linear-gradient(to right, #ffffff, #5a5a5a);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  margin-left: 2%;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.menu li a:hover {
+  color: red;
+}
+
+header .menu {
+  margin: 0 auto;
+
+  border-radius: 20px 20px 20px 20px;
+
+  padding: 15px;
+
+  display: flex;
+  gap: 20px;
+  gap: 40px;
+  width: 400px;
+  margin-left: -55%;
+}
+
+header .menu li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+}
 .vert {
-  color: green;
+  /* mettre un dégradé a un txt */
+  background: linear-gradient(to right, #008b0042, #00ae0c);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1 {
   text-align: center;
   margin-bottom: 8%;
+  margin-top: 5%;
 }
 
 h2 {
-  text-decoration: underline;
   margin-left: 2%;
+
+  /* mettre un dégradé a un txt */
+  background: linear-gradient(to right, #08fc0042, #00ae0c);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .personnages-container {
@@ -53,10 +114,12 @@ h2 {
 }
 
 .personnage-carte img {
-  border: 3px solid rgb(73, 73, 73);
+  border: 3px solid transparent;
+
   border-radius: 16px;
   margin: 0;
   border-bottom: 10px solid rgb(73, 73, 73);
+  margin-bottom: 5%;
 }
 
 .description-perso {
@@ -72,7 +135,8 @@ h2 {
   border: 3px solid rgb(73, 73, 73);
 
   border-radius: 10px;
-  border-top: 0;
+
+  border-bottom: 10px solid rgb(73, 73, 73);
 
   color: rgb(255, 255, 255);
 
@@ -86,4 +150,8 @@ h2 {
   max-width: 200px;
   min-height: 100px;
   max-height: 100px;
+}
+
+.description-perso p:hover {
+  color: green;
 }
