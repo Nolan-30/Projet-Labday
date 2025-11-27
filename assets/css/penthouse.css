@@ -124,12 +124,18 @@ li {
 
 .personnages-container {
   display: flex; /* Active Flexbox */
-  justify-content: flex-start; /* Commence l'alignement à gauche */
-  margin-left: 8%; /* Aligne avec le titre h2 */
+  justify-content: center; /* Commence l'alignement à gauche */
+
   gap: 110px; /* Ajoute un espacement entre les cartes (facultatif, mais recommandé) */
   margin-top: 1%;
   border-radius: 10px;
   margin-bottom: 5%;
+}
+
+.perso-container-bas {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .personnage-carte {
@@ -167,6 +173,10 @@ li {
   border-bottom: 10px solid rgb(73, 73, 73);
 }
 
+.remove-grey-border {
+  border: none !important;
+}
+
 .description-perso {
   display: flex;
 
@@ -202,8 +212,18 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
+.remove-grey-border {
+  border: 0;
+}
+
 .min_seol-a-perso img {
   border: 3px solid transparent;
+  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
+}
+
+.border-gold {
+  border: 3px solid transparent;
+  border-bottom: 10px solid transparent;
   border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
 }
 
@@ -256,4 +276,8 @@ li {
   margin-bottom: 2%;
   font-style: oblique;
   font-size: 30px;
+}
+
+.espace p {
+  margin-top: 70%;
 }
