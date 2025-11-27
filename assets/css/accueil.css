@@ -11,6 +11,11 @@ header {
   align-items: center;
 }
 
+header img {
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
 header p {
   margin-left: 2%;
   color: black;
@@ -39,7 +44,7 @@ header .menu {
   gap: 20px;
   gap: 40px;
   width: 400px;
-  margin-left: -55%;
+  margin-left: -65%;
 }
 
 header .menu li {
