@@ -11,6 +11,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
+}
+
+header img {
+  margin-left: 30px;
+  border-radius: 10px;
 }
 
 header p {
@@ -20,17 +26,17 @@ header p {
   font-weight: bold;
 }
 
-header img {
-  margin-left: 30px;
-  border-radius: 10px;
-}
-
 .menu li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+
   font-family: "Lato", sans-serif;
   font-weight: 1000;
+}
+
+.menu li a:hover {
+  color: red;
 }
 
 header .menu {
@@ -44,7 +50,8 @@ header .menu {
   gap: 20px;
   gap: 40px;
   width: 400px;
-  margin-left: -65%;
+  margin-top: 10px;
+  margin-left: -95%;
 }
 
 header .menu li {
@@ -71,7 +78,7 @@ header .menu li {
 }
 
 body {
-  background-color: #1a1a1a; /* Fond gris foncé global */
+  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
   font-family: "Lato", sans-serif;
   color: #ffffff;
   line-height: 1.6;
@@ -129,15 +136,91 @@ body {
 
 /* Couleurs spécifiques des images */
 .visual-assaillant {
-  background-color: #9b2226; /* Rouge sombre (Assaillant) */
+  /* background-color: #00410a;  Rouge sombre (Assaillant) */
+  background: radial-gradient(circle at center, #03a52c 0%, #000000 100%);
+}
+
+.visual-assaillant img {
+  border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+
+.visual-assaillant img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgb(0, 255, 30);
 }
 
 .visual-colossal {
-  background-color: #9b2226; /* Rouge sombre (Colossal) */
+  background: radial-gradient(
+    circle at center,
+    #ff0000 0%,
+    #000000 100%
+  ); /* Rouge sombre (Colossal) */
+}
+.visual-colossal img {
+  border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+
+.visual-colossal img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
 .visual-armored {
-  background-color: #d4a373; /* Beige/Marron clair (Cuirassé) */
+  background: radial-gradient(circle at center, #ffffff 0%, #887544 100%);
+}
+
+.visual-armored img {
+  border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+
+.visual-armored img:hover {
+  display: flex;
+  border-radius: 10px;
+
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.visual-bestial {
+  background: radial-gradient(circle at center, #805900 0%, #000000 100%);
+}
+
+.visual-bestial img {
+  border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+
+.visual-bestial img:hover {
+  display: flex;
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.76);
+}
+
+.visual-marteau {
+  background: radial-gradient(circle at center, #1281d5 0%, #000000 100%);
+}
+
+.visual-marteau img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+}
+
+.visual-marteau img:hover {
+  display: flex;
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* --- PARTIE CONTENU (TEXTE) --- */
@@ -194,7 +277,7 @@ body {
 
 /* Couleur rouge pour les stats de l'assaillant */
 .stats-red li {
-  color: #ef233c;
+  color: #00410a; /* Rouge sombre (Assaillant) */
 }
 
 /* --- LISTE "AUTRES" EN BAS --- */
@@ -223,4 +306,31 @@ body {
   .page-title {
     font-size: 1.8rem;
   }
+}
+
+footer {
+  border-top: 1px solid rgba(85, 85, 85, 0.489);
+
+  padding: 10px;
+  margin-top: 5%;
+  background-color: black;
+}
+
+.fin-page h3,
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.fin-page h3 {
+  margin-top: 3%;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.fin-page p {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
