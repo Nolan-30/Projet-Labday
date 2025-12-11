@@ -103,9 +103,11 @@ body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), #121212;
+  /* ajt du background avec l'adresse de l'image */
+  background: fixed
+    url(https://server.wallpaperalchemy.com/storage/wallpapers/122/attack-on-titan-wallpaper-high-resolution-4k.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
 }
 
