@@ -129,7 +129,6 @@ body {
 }
 
 .season-thumbnail {
-  background-color: #383838;
   width: 280px;
   height: 160px;
   flex-shrink: 0;
@@ -137,7 +136,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .season-thumbnail span {
@@ -147,9 +145,25 @@ body {
   color: #ffffff;
 }
 
+.season-thumbnail span img {
+  transition: transform 1s ease-out;
+}
+.season-thumbnail span img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgb(241, 241, 241);
+}
 /* --- CONTENU TEXTE --- */
 .season-content {
   flex: 1;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .season-content h2 {
