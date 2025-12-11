@@ -10,6 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
+  margin-bottom: 5%;
 }
 
 header img {

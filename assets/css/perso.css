@@ -1,3 +1,8 @@
+/* importation de bibiliotheques */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
 body {
   background: radial-gradient(
     circle at center,
@@ -143,10 +148,16 @@ header .menu li {
   /* petit effet doré sur les bordures qd on passe dessus*/
   box-shadow: 0 0 10px rgba(0, 162, 0, 0.993);
 }
+/*
+.perso-section {
+
+  background: url(https://i.pinimg.com/1200x/ad/24/79/ad2479fe165719175202e9aeb1421f8b.jpg);
+  background-size: cover;
+}*/
 
 .personnages-container {
   display: flex; /* Active Flexbox */
-  justify-content: flex-start; /* Commence l'alignement à gauche */
+  justify-content: center; /* Commence l'alignement à gauche */
   margin-left: 2%; /* Aligne avec le titre h2 */
   gap: 130px;
   margin-top: 1%;
@@ -174,9 +185,9 @@ header .menu li {
 
 .nom-perso {
   color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
-  font-style: italic;
+
   font-style: bold;
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
   text-align: center;
 }
@@ -189,12 +200,12 @@ header .menu li {
   font-weight: 1000; /* Poids gras pour les titres */
 }
 #perso-scroll {
-  margin-left: 2%;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin-top: 15%;
+  margin-bottom: 5%;
   /*Style*/
+  text-align: center;
   text-decoration: underline;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 1000;
 }
 .personnage-carte img {

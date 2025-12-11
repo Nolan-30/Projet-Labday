@@ -92,8 +92,7 @@ body {
   padding: 60px 20px;
 }
 
-/* --- TITRE DE LA PAGE --- */
-.page-title {
+h1 {
   font-family: "Poppins", sans-serif;
 
   font-weight: 900;
@@ -104,6 +103,33 @@ body {
   letter-spacing: 2px;
   margin-bottom: 60px;
   font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.degrader-rouge {
+  background: linear-gradient(to right, #ffffff, #ff0000);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.founding-titan {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+
+.founding-titan img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+  border: 1px solid rgba(85, 85, 85, 0.489);
+}
+
+.founding-titan img:hover {
+  border-radius: 10px;
+  transform: scale(1.03);
+
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .titans-primordiaux.page-title {

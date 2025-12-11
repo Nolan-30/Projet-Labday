@@ -1,3 +1,7 @@
+/* importation des  bibliotheques */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
 /* --- HEADER --- */
 
 .degrader-blanc {
@@ -92,13 +96,14 @@ body {
 /* --- TITRE --- */
 .page-title {
   font-family: "Poppins", sans-serif;
-  font-size: 2.2rem;
+
+  font-weight: 900;
+  font-size: 3.5rem;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 50px;
-  font-weight: 400;
 }
 
 .season-card {
@@ -147,6 +152,7 @@ body {
 
 .season-thumbnail span img {
   transition: transform 1s ease-out;
+  border-radius: 10px;
 }
 .season-thumbnail span img:hover {
   display: flex;
