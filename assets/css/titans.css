@@ -61,6 +61,10 @@ header .menu li {
   color: rgb(255, 255, 255);
 }
 
+.bg-black {
+  background-color: black;
+}
+
 .presentation h1 {
   text-align: center;
   font-style: italic;

@@ -185,7 +185,6 @@ header .menu li {
 
 .nom-perso {
   color: rgb(255, 255, 255); /* Couleur d'or pour le nom */
-
   font-style: bold;
   font-size: 25px;
   margin: 10px 0 5px 0; /* Marge au-dessus et en dessous (plus petit en bas) */
@@ -200,7 +199,7 @@ header .menu li {
   font-weight: 1000; /* Poids gras pour les titres */
 }
 #perso-scroll {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 5%;
   /*Style*/
   text-align: center;

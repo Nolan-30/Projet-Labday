@@ -105,8 +105,7 @@ body {
   text-align: center;
   padding: 20px;
   /* ajt du background avec l'adresse de l'image */
-  background: fixed
-    url(https://server.wallpaperalchemy.com/storage/wallpapers/122/attack-on-titan-wallpaper-high-resolution-4k.jpg);
+  background: fixed url(/assets/Images/snk-cover.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
