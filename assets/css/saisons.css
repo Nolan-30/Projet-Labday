@@ -13,6 +13,11 @@
 
 header {
   display: flex;
+  position: fixed;
+  background: #000000;
+  z-index: 1;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
@@ -96,6 +101,7 @@ body {
 
 /* --- TITRE --- */
 .page-title {
+  margin-top: 10%;
   font-family: "Poppins", sans-serif;
 
   font-weight: 900;

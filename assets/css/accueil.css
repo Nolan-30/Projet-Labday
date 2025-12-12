@@ -5,6 +5,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.degrader-rouge {
+  background: linear-gradient(to right, #ff0000, #700000);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 header {
   display: flex;
@@ -51,7 +57,7 @@ header .menu {
   padding: 15px;
 
   display: flex;
-  gap: 20px;
+
   gap: 40px;
   width: 400px;
   margin-top: 10px;
@@ -87,11 +93,21 @@ html {
 }
 
 body {
-  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
+  background-color: black;
   font-family: "Lato", sans-serif;
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+.logo-bataillon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 :root {
@@ -169,6 +185,11 @@ body {
   margin: 0 auto;
   padding: 80px 20px;
   background-color: var(--bg-dark);
+  background-color: black;
+}
+
+#intro {
+  background-color: black;
 }
 
 /* --- SECTION INTRODUCTION --- */
@@ -179,8 +200,8 @@ body {
 
 .intro-label {
   color: var(--snk-red);
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 15px;

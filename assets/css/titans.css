@@ -11,6 +11,11 @@
 
 header {
   display: flex;
+  position: fixed;
+  background: #000000;
+  z-index: 1;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
@@ -109,6 +114,7 @@ h1 {
   margin-bottom: 60px;
   font-weight: 400;
   margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 .degrader-rouge {
@@ -121,13 +127,12 @@ h1 {
 .founding-titan {
   display: flex;
   justify-content: center;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .founding-titan img {
   transition: transform 1s ease-out;
   border-radius: 10px;
-  border: 1px solid rgba(85, 85, 85, 0.489);
 }
 
 .founding-titan img:hover {
@@ -135,6 +140,14 @@ h1 {
   transform: scale(1.03);
 
   box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.border-grey {
+  /* Nouvelle marge pour l'espacement: 5% au-dessus et 5% en dessous */
+  margin: 5% 0;
+  /* Assurez-vous qu'elle prend toute la largeur */
+  width: 100%;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
 }
 
 .titans-primordiaux.page-title {
