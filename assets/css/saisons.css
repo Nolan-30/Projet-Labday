@@ -48,6 +48,10 @@ header p {
   color: red;
 }
 
+a {
+  transition: color 1s;
+}
+
 header .menu {
   margin: 0 auto;
 
@@ -87,7 +91,7 @@ header .menu li {
 }
 
 body {
-  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
+  background-color: black;
   font-family: "Lato", sans-serif;
   color: #ffffff;
   line-height: 1.6;
@@ -97,6 +101,11 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 20px;
+}
+
+.seasons-container h2 {
+  text-align: center;
+  justify-content: center;
 }
 
 /* --- TITRE --- */
@@ -110,7 +119,9 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+
+  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
 }
 
 .season-card {

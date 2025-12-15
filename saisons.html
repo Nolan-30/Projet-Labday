@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
   <link rel="stylesheet" href="assets/CSS/saisons.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script
+    src="https://kit.fontawesome.com/30bbba539a.js"
+    crossorigin="anonymous"
+  ></script>
   <header>
     <img src="assets/images/logo-snk.png" height="75" width="auto" />
     <nav>
@@ -32,7 +37,7 @@
     <title>Chronologie des Saisons - SNK Wiki</title>
   </head>
   <body>
-    <main class="seasons-container">
+    <main class="seasons-container" data-aos="fade-up">
       <h1 class="page-title">
         <span class="degrader-blanc">Chronologie des Saisons </span>
       </h1>
@@ -125,9 +130,16 @@
       <div class="fin-page">
         <h3><span class="degrader-blanc">SHINZOU WO SASAGEYO !</span></h3>
         <p>
-          <span class="degrader-blanc">2025 - Site crée par ND et Ethan</span>
+          <span class="degrader-blanc"
+            >2025 - Site crée par Nolan et Ethan</span
+          >
         </p>
       </div>
     </footer>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

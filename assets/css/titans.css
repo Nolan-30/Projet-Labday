@@ -46,6 +46,10 @@ header p {
   color: red;
 }
 
+a {
+  transition: color 1s;
+}
+
 header .menu {
   margin: 0 auto;
 

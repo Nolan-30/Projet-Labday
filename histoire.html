@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNK.WIKI - Histoire</title>
     <link rel="stylesheet" href="assets/css/histoire.css" />
+    <!-- importation d'une biblio pr une animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/30bbba539a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -13,36 +19,28 @@
       <nav>
         <ol class="menu">
           <li>
-            <span class="degrader-blanc"
-              ><a href="accueil.html">Accueil</a></span
-            >
+            <a href="accueil.html">Accueil</a>
           </li>
           <li>
-            <span class="degrader-blanc"
-              ><a href="histoire.html">Histoire</a></span
-            >
+            <a href="histoire.html">Histoire</a>
           </li>
           <li>
-            <span class="degrader-blanc"
-              ><a href="perso.html">Personnages</a></span
-            >
+            <a href="perso.html">Personnages</a>
           </li>
           <li>
-            <span class="degrader-blanc"><a href="titans.html">Titans</a></span>
+            <a href="titans.html">Titans</a>
           </li>
           <li>
-            <span class="degrader-blanc"
-              ><a href="saisons.html">Saisons</a></span
-            >
+            <a href="saisons.html">Saisons</a>
           </li>
           <li>
-            <span class="degrader-blanc"><a href="jeu.html">Jeu</a></span>
+            <a href="jeu.html">Jeu</a>
           </li>
         </ol>
       </nav>
     </header>
     <main>
-      <div class="titre-principal-conteneur">
+      <div class="titre-principal-conteneur" data-aos="fade-up">
         <h1><span class="degrader-rouge">L'Histoire D'un Monde Cruel</span></h1>
         <img
           src="/assets/Images/ymir.jpg"
@@ -53,7 +51,7 @@
         <div class="separateur-rouge"></div>
       </div>
 
-      <section class="boite-contenu">
+      <section class="boite-contenu" data-aos="fade-up">
         <div class="section-texte">
           <h2 class="sous-titre">ORIGINE</h2>
           <p>
@@ -111,10 +109,16 @@
       <div class="fin-page">
         <h3><span class="degrader-blanc">SHINZOU WO SASAGEYO !</span></h3>
         <p>
-          <span class="degrader-blanc">2025 - Site crée par ND et Ethan</span>
+          <span class="degrader-blanc"
+            >2025 - Site crée par Nolan et Ethan</span
+          >
         </p>
       </div>
     </footer>
-    <!-- <script src=""></script> -->
+    <script src="/assets/js/snk.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-/* --- Réinitialisation et Base --- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +40,9 @@ header p {
 
 .menu li a:hover {
   color: red;
+}
+a {
+  transition: color 1s;
 }
 
 header .menu {
@@ -91,6 +94,13 @@ main {
   margin-bottom: 40px;
 }
 
+.degrader-blanc {
+  background: linear-gradient(to right, #ffffff, #5a5a5a);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .degrader-rouge {
   background: linear-gradient(to right, #ff0000, #730000);
   background-clip: border-box;
@@ -101,7 +111,7 @@ main {
 .titre-principal-conteneur img {
   transition: transform 1s ease-out;
   border-radius: 10px;
-  border: 1px solid rgba(85, 85, 85, 0.489);
+  border: 3px solid rgba(85, 85, 85, 0.489);
 }
 
 .titre-principal-conteneur img:hover {
@@ -158,6 +168,9 @@ p {
   font-size: 15px;
   color: #ccc;
   margin-bottom: 10px;
+
+  /* CORRECTION NÉCESSAIRE POUR SUPPRIMER LES GROS ESPACES IRRÉGULIERS */
+  text-align: left;
 }
 
 strong {

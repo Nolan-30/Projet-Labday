@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personnages</title>
+    <!-- importation d'une biblio pr une animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/perso.css" />
+    <script
+      src="https://kit.fontawesome.com/30bbba539a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!------------------------------------- HEADER --------------------------------- -->
     <header>
@@ -34,7 +40,7 @@
     </header>
   </head>
   <body>
-    <div class="bataillon">
+    <div class="bataillon" data-aos="fade-up">
       <h1>
         <span class="vert">Bataillon</span
         ><span class="degrader-blanc"> D'Exploration</span>
@@ -57,85 +63,129 @@
 
       <div class="personnages-container">
         <div class="personnage-carte">
-          <img src="/assets/Images/eren.jpg" height="auto" width="250" />
-          <p class="nom-perso">
-            <span class="degrader-blanc">
-              <a
-                href="https://attaque-des-titans.fandom.com/fr/wiki/Eren_J%C3%A4ger"
-                target="_blank"
-              >
-                Eren Jaëger</a
-              ></span
-            >
-          </p>
-          <div class="description-perso">
-            <p>
-              Eren est le héros principal de l'histoire. Il a une rage immense
-              et combat pour la liberté à tout prix.
-            </p>
+          <div class="flip-cards">
+            <div class="face-avant">
+              <img
+                src="/assets/Images/face-arriere.jpg"
+                height="auto"
+                width="250"
+              />
+            </div>
+            <div class="face-arriere">
+              <img src="/assets/Images/eren.jpg" height="auto" width="250" />
+              <p class="nom-perso">
+                <span class="degrader-blanc">
+                  <a
+                    href="https://attaque-des-titans.fandom.com/fr/wiki/Eren_J%C3%A4ger"
+                    target="_blank"
+                  >
+                    Eren Jaëger</a
+                  ></span
+                >
+              </p>
+              <div class="description-perso">
+                <p>
+                  Eren est le héros principal de l'histoire. Il a une rage
+                  immense et combat pour la liberté à tout prix.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="personnage-carte">
-          <img src="/assets/Images/mikasa.jpg" height="auto" width="250" />
-          <p class="nom-perso">
-            <span class="degrader-blanc">
-              <a
-                href="https://attaque-des-titans.fandom.com/fr/wiki/Mikasa_Ackerman"
-                target="_blank"
-                >Mikasa Ackerman</a
-              ></span
-            >
-          </p>
-          <div class="description-perso">
-            <p>
-              Mikasa est une soldate d'élite incroyablement puissante. Elle est
-              dévouée à protéger Eren.
-            </p>
+          <div class="flip-cards">
+            <div class="face-avant">
+              <img
+                src="/assets/Images/face-arriere.jpg"
+                height="auto"
+                width="250"
+              />
+            </div>
+            <div class="face-arriere">
+              <img src="/assets/Images/mikasa.jpg" height="auto" width="250" />
+              <p class="nom-perso">
+                <span class="degrader-blanc">
+                  <a
+                    href="https://attaque-des-titans.fandom.com/fr/wiki/Mikasa_Ackerman"
+                    target="_blank"
+                    >Mikasa Ackerman</a
+                  ></span
+                >
+              </p>
+              <div class="description-perso">
+                <p>
+                  Mikasa est une soldate d'élite incroyablement puissante. Elle
+                  est dévouée à protéger Eren.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="personnage-carte">
-          <img
-            src="/assets/Images/armin.jpg"
-            height="auto"
-            width="250"
-            alt="Joo Dan-Tae"
-          />
-          <p class="nom-perso">
-            <span class="degrader-blanc">
-              <a
-                href="https://attaque-des-titans.fandom.com/fr/wiki/Armin_Arlelt"
-                target="_blank"
-              >
-                Armin Arlet
-              </a></span
-            >
-          </p>
-          <div class="description-perso">
-            <p>
-              Armin est l'ami intelligent et le stratège du groupe. C'est lui
-              qui trouve les solutions et les plans.
-            </p>
+          <div class="flip-cards">
+            <div class="face-avant">
+              <img
+                src="/assets/Images/face-arriere.jpg"
+                height="auto"
+                width="250"
+              />
+            </div>
+            <div class="face-arriere">
+              <img
+                src="/assets/Images/armin.jpg"
+                height="auto"
+                width="250"
+                alt="Joo Dan-Tae"
+              />
+              <p class="nom-perso">
+                <span class="degrader-blanc">
+                  <a
+                    href="https://attaque-des-titans.fandom.com/fr/wiki/Armin_Arlelt"
+                    target="_blank"
+                  >
+                    Armin Arlet
+                  </a></span
+                >
+              </p>
+              <div class="description-perso">
+                <p>
+                  Armin est l'ami intelligent et le stratège du groupe. C'est
+                  lui qui trouve les solutions et les plans.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="personnage-carte">
-          <img src="/assets/Images/levi.jpg" height="auto" width="250" />
-          <p class="nom-perso">
-            <span class="degrader-blanc">
-              <a
-                href="https://attaque-des-titans.fandom.com/fr/wiki/Liva%C3%AF_Ackerman"
-                target="_blank"
-                >Levi Ackerman</a
-              >
-            </span>
-          </p>
-          <div class="description-perso">
-            <p>
-              Levi est le caporal-chef du Bataillon d'Exploration, reconnu comme
-              le soldat le plus fort de l'humanité.
-            </p>
+          <div class="flip-cards">
+            <div class="face-avant">
+              <img
+                src="/assets/Images/face-arriere.jpg"
+                height="auto"
+                width="250"
+              />
+            </div>
+            <div class="face-arriere">
+              <img src="/assets/Images/levi.jpg" height="auto" width="250" />
+              <p class="nom-perso">
+                <span class="degrader-blanc">
+                  <a
+                    href="https://attaque-des-titans.fandom.com/fr/wiki/Liva%C3%AF_Ackerman"
+                    target="_blank"
+                    >Levi Ackerman</a
+                  >
+                </span>
+              </p>
+              <div class="description-perso">
+                <p>
+                  Levi est le caporal-chef du Bataillon d'Exploration, reconnu
+                  comme le soldat le plus fort de l'humanité.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,9 +203,18 @@
       <div class="fin-page">
         <h3><span class="degrader-blanc">SHINZOU WO SASAGEYO !</span></h3>
         <p>
-          <span class="degrader-blanc">2025 - Site crée par ND et Ethan</span>
+          <span class="degrader-blanc"
+            >2025 - Site crée par Nolan et Ethan</span
+          >
         </p>
       </div>
     </footer>
+
+    <script src="/assets/js/snk.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

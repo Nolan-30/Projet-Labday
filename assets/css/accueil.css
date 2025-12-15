@@ -1,3 +1,17 @@
+/* --- transition de la page quand un titre est cliqué */
+
+body {
+  /* dure de la transition */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Style de base: La page est à sa position normale (0) */
+
+body.page-sortie-slide {
+  /* on decale de 500% vers la droite */
+  transform: translateX(-500vh);
+}
+
 /* --- HEADER --- */
 .degrader-blanc {
   background: linear-gradient(to right, #ffffff, #5a5a5a);
@@ -67,6 +81,9 @@ header .menu {
 header .menu li {
   list-style-type: none;
   color: rgb(255, 255, 255);
+}
+a {
+  transition: color 1s;
 }
 
 .presentation h1 {

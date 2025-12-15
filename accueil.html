@@ -7,6 +7,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquette SNK Wiki Complète</title>
+    <!-- importation d'une biblio pr une animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/CSS/accueil.css" />
     <script
@@ -42,7 +44,7 @@
     </div>
   </head>
   <body>
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-up">
       <h1 class="hero-title">Shingeki no Kyojin</h1>
       <div class="hero-separator"></div>
       <p class="hero-quote">"Ce jour-là, l'humanité s'en est souvenue..."</p>
@@ -116,9 +118,16 @@
       <div class="fin-page">
         <h3><span class="degrader-blanc">SHINZOU WO SASAGEYO !</span></h3>
         <p>
-          <span class="degrader-blanc">2025 - Site crée par ND et Ethan</span>
+          <span class="degrader-blanc"
+            >2025 - Site crée par Nolan et Ethan</span
+          >
         </p>
       </div>
     </footer>
+    <script src="/assets/js/snk.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
