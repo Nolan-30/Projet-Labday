@@ -13,11 +13,6 @@
 
 header {
   display: flex;
-  position: fixed;
-  background: #000000;
-  z-index: 1;
-  top: 0;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
@@ -46,10 +41,6 @@ header p {
 
 .menu li a:hover {
   color: red;
-}
-
-a {
-  transition: color 1s;
 }
 
 header .menu {
@@ -91,26 +82,19 @@ header .menu li {
 }
 
 body {
-  background-color: black;
+  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
   font-family: "Lato", sans-serif;
   color: #ffffff;
   line-height: 1.6;
 }
-
 .seasons-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 
-.seasons-container h2 {
-  text-align: center;
-  justify-content: center;
-}
-
 /* --- TITRE --- */
 .page-title {
-  margin-top: 10%;
   font-family: "Poppins", sans-serif;
 
   font-weight: 900;
@@ -119,9 +103,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 100px;
-
-  border-bottom: 1px solid rgba(85, 85, 85, 0.489);
+  margin-bottom: 50px;
 }
 
 .season-card {
@@ -197,12 +179,14 @@ li {
   text-transform: uppercase;
   margin-bottom: 12px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .description {
   color: #aeb4c0;
   font-size: 1rem;
   margin-bottom: 15px;
+  max-width: 600px;
 }
 
 .highlight {

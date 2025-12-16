@@ -202,7 +202,8 @@ header .menu li {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
 .face-avant,
@@ -221,7 +222,8 @@ header .menu li {
 }
 
 .est-retournee {
-  transform: rotateY(180deg);
+  /* On fait tourner le conteneur dans le sens inverse */
+  transform: rotateY(-180deg);
 }
 
 .nom-perso {
