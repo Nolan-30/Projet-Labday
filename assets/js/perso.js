@@ -6,7 +6,7 @@ const toutesLesCartes = document.querySelectorAll(selecteurCartePersonnage);
 
 // Variables pour le chrono
 const affichageChrono = document.getElementById("affichage");
-const boutonChrono = document.getElementById("btnAction");
+const boutonChrono = document.getElementById("btn-action");
 
 toutesLesCartes.forEach((carte) => {
   carte.addEventListener("click", function () {

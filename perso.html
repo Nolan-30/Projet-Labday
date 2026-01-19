@@ -59,15 +59,18 @@
     <div class="perso-section">
       <h2 id="perso-scroll">
         <span class="degrader-blanc">Personnages principaux</span>
-        <div id="affichage">00:00</div>
-        <button id="btnAction">Démarrer</button>
       </h2>
+      <div class="chrono">
+        <button id="btn-action">Démarrer</button>
+        <div id="affichage">00:00</div>
+      </div>
 
       <div class="personnages-container">
         <div class="personnage-carte">
           <div class="flip-cards">
             <div class="face-avant">
               <img
+                draggable="false"
                 src="/assets/Images/face-avant-perso.jpg"
                 height="auto"
                 width="250"
@@ -105,7 +108,12 @@
               />
             </div>
             <div class="face-arriere">
-              <img src="/assets/Images/mikasa.jpg" height="auto" width="250" />
+              <img
+                src="/assets/Images/mikasa.jpg"
+                draggable="false"
+                height="auto"
+                width="250"
+              />
               <p class="nom-perso">
                 <span class="degrader-blanc">
                   <a

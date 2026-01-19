@@ -1,3 +1,5 @@
+/* corriger le prblm pr le titan d'Eren */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 /* --- HEADER --- */
@@ -248,7 +250,11 @@ h1 {
 }
 
 .visual-bestial {
-  background: radial-gradient(circle at center, #805900 0%, #000000 100%);
+  background: radial-gradient(
+    circle at center,
+    rgb(128, 89, 0) 0%,
+    #000000 100%
+  );
 }
 
 .visual-bestial img {
@@ -264,7 +270,11 @@ h1 {
 }
 
 .visual-marteau {
-  background: radial-gradient(circle at center, #1281d5 0%, #000000 100%);
+  background: radial-gradient(
+    circle at center,
+    rgb(18, 129, 213) 0%,
+    #000000 100%
+  );
 }
 
 .visual-marteau img {
@@ -331,9 +341,27 @@ h1 {
   font-weight: 700;
 }
 
+/* STATS DES TITANS */
+
 /* Couleur rouge pour les stats de l'assaillant */
-.stats-red li {
+.stats-green li {
   color: #00410a; /* Rouge sombre (Assaillant) */
+}
+
+.stats-red {
+  color: red;
+}
+
+.stats-beige {
+  color: rgb(230, 213, 132);
+}
+
+.stats-brown {
+  color: rgb(60, 42, 0);
+}
+
+.stats-cyan {
+  color: rgb(122, 197, 255);
 }
 
 /* --- LISTE "AUTRES" EN BAS --- */
