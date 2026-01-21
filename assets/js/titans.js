@@ -1,18 +1,14 @@
-// retournement des cartes au click
+// Variables pour les cartes des personnages
+const classeFlip = "est-retournee";
 
-const CLASSE_FLIP = "est-retournee";
-const SELECTEUR_CARTE_PERSONNAGE = ".personnage-carte";
-const SELECTEUR_CONTENEUR_INTERNE = ".flip-cards";
-
-const toutesLesCartes = document.querySelectorAll(SELECTEUR_CARTE_PERSONNAGE);
+const selecteurConteneurInterne = ".flip-cards";
+const toutesLesCartes = document.querySelectorAll(".card-visual");
 
 toutesLesCartes.forEach((carte) => {
   carte.addEventListener("click", function () {
-    const conteneurInterne = carte.querySelector(SELECTEUR_CONTENEUR_INTERNE);
-
-    // Si l'élément est trouvé on le flip
+    const conteneurInterne = carte.querySelector(selecteurConteneurInterne);
     if (conteneurInterne) {
-      conteneurInterne.classList.toggle(CLASSE_FLIP);
+      conteneurInterne.classList.toggle(classeFlip);
     }
   });
 });

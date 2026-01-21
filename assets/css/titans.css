@@ -364,6 +364,45 @@ h1 {
   color: rgb(122, 197, 255);
 }
 
+/* retournement carte */
+
+.flip-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* retournement carte */
+
+.flip-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.face-avant,
+.face-arriere {
+  position: absolute;
+
+  -webkit-backface-visibility: hidden; /* Cache la face arrière lorsque l'élément tourne */
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.face-arriere {
+  transform: rotateY(180deg);
+}
+
+.est-retournee {
+  transform: rotateY(-180deg);
+}
+
 /* --- LISTE "AUTRES" EN BAS --- */
 .others-list {
   text-align: center;

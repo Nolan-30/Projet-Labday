@@ -210,6 +210,22 @@ strong {
   background-color: #e0e0e0;
 }
 
+.carte-blanche:hover {
+  transition: transform 2s ease-out;
+}
+
+.carte-rouge:hover {
+  transform: scale(1.1);
+}
+
+.carte-rouge:hover {
+  transition: transform 2s ease-out;
+}
+
+.carte-blanche:hover {
+  transform: scale(1.1);
+}
+
 .carte-rouge::before {
   background-color: var(--rouge-snk);
 }

@@ -1,12 +1,12 @@
+// Chrono
+const boutonChrono = document.getElementById("btn-action");
+const affichageChrono = document.getElementById("affichage");
+
 // Variables pour les cartes des personnages
 const classeFlip = "est-retournee";
-const selecteurCartePersonnage = ".personnage-carte";
+const selecteurCartePersonnage = ".personnage-carte"; // retournement de carte
 const selecteurConteneurInterne = ".flip-cards";
 const toutesLesCartes = document.querySelectorAll(selecteurCartePersonnage);
-
-// Variables pour le chrono
-const affichageChrono = document.getElementById("affichage");
-const boutonChrono = document.getElementById("btn-action");
 
 toutesLesCartes.forEach((carte) => {
   carte.addEventListener("click", function () {
@@ -22,15 +22,15 @@ let tempsEcoule = 0;
 let intervalId = null; // Stocke l'ID de l'intervalle
 
 const gererChrono = () => {
-  // 1. On arrête l'ancien chrono s'il tourne déjà (évite les bugs de vitesse)
+  //  On arrête l'ancien chrono s'il tourne déjà
   clearInterval(intervalId);
 
-  // 2. Réinitialisation
+  // Réinitialisation
   tempsEcoule = 0;
   affichageChrono.innerText = "00:00";
   affichageChrono.style.display = "block";
 
-  // 3. Lancement du nouvel intervalle
+  //  Lancement du nouvel intervalle
   intervalId = setInterval(() => {
     tempsEcoule += 1000; // On incrémente de 1 seconde (1000ms)
 
