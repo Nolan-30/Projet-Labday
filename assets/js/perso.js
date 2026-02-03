@@ -22,8 +22,17 @@ let tempsEcoule = 0;
 let intervalId = null; // Stocke l'ID de l'intervalle
 
 const gererChrono = () => {
-  //  On arrête l'ancien chrono s'il tourne déjà
+  const conteneurCartes = document.getElementById("conteneur-cartes");
+  const zoneIndice = document.getElementById("indice");
+  const zoneQuiz = document.getElementById("quiz");
+
+  // ÉTAPE 1 : Cacher les cartes et afficher l'indice
+  conteneurCartes.style.display = "none";
+  zoneIndice.style.display = "block";
+
+  // Lancer le chrono
   clearInterval(intervalId);
+  tempsEcoule = 0;
 
   // Réinitialisation
   tempsEcoule = 0;
@@ -44,6 +53,11 @@ const gererChrono = () => {
 
     affichageChrono.innerText = `${minutesFormat}:${secondesFormat}`;
   }, 1000); // Mise à jour toutes les secondes
+  setTimeout(() => {
+    // ÉTAPE 3 : Cacher l'indice et afficher le quiz
+    zoneIndice.style.display = "none";
+    zoneQuiz.style.display = "block";
+  }, 3000);
 };
 
 boutonChrono.addEventListener("click", gererChrono);

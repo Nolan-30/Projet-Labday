@@ -38,9 +38,6 @@ header p {
   font-weight: 1000;
 }
 
-.menu li a:hover {
-  color: red;
-}
 a {
   transition: color 1s;
 }
@@ -63,6 +60,58 @@ header .menu {
 header .menu li {
   list-style-type: none;
   color: rgb(255, 255, 255);
+}
+
+header .menu li a img {
+  position: absolute;
+  left: 92%;
+  top: 25%;
+}
+
+/* SURLIGNEMENT */
+
+.menu li a {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+.menu li a::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at center, #ff0303 0%, #000000 100%);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.menu li a:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+}
+
+/* SURLIGNEMENT BLANC PR LA PFP */
+
+.pfp img {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+.pfp img::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at center, #fdfdfd 0%, #ffffff 100%);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.pfp img:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
 body {
@@ -168,9 +217,10 @@ p {
   font-size: 15px;
   color: #ccc;
   margin-bottom: 10px;
+}
 
-  /* CORRECTION NÉCESSAIRE POUR SUPPRIMER LES GROS ESPACES IRRÉGULIERS */
-  text-align: left;
+.section-texte .sous-titre p:active {
+  background-color: red;
 }
 
 strong {

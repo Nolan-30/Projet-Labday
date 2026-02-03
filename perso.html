@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,7 +33,14 @@
             <a href="saisons.html">Saisons</a>
           </li>
           <li>
-            <a href="jeu.html">Jeu</a>
+            <a href="compte.html">
+              <span class="pfp">
+                <img
+                  src="/assets/Images/pfp.png"
+                  alt="pfp"
+                  height="40"
+                /> </span
+            ></a>
           </li>
         </ol>
       </nav>
@@ -99,6 +106,21 @@
         </div>
 
         <div class="personnage-carte">
+          <div id="conteneur-cartes" class="personnages-container"></div>
+
+          <div
+            id="indice"
+            style="display: none; text-align: center; font-size: 24px"
+          >
+            <p>💡 Regardez l'état de la pièce, pas l'état des épées.</p>
+          </div>
+
+          <div id="quiz" style="display: none; text-align: center">
+            <h2>
+              Quel est le 'tic' ou l'obsession particulière de Livaï qu'il
+              impose à toute son escouade avant chaque mission ?
+            </h2>
+          </div>
           <div class="flip-cards">
             <div class="face-avant">
               <img
@@ -211,12 +233,8 @@
 
     <footer>
       <div class="fin-page">
-        <h3><span class="degrader-blanc">SHINZOU WO SASAGEYO !</span></h3>
-        <p>
-          <span class="degrader-blanc"
-            >2025 - Site crée par Nolan et Ethan</span
-          >
-        </p>
+        <h3>SHINZOU WO SASAGEYO !</h3>
+        <p>2026 - Site crée par Nolan et Ethan</p>
       </div>
     </footer>
 
