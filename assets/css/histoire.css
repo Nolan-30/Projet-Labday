@@ -5,9 +5,11 @@
   box-sizing: border-box;
 }
 
+/* --- HEADER --- */
+
 header {
   display: flex;
-  position: fixed;
+
   background: #000000;
   z-index: 1;
   top: 0;
@@ -38,10 +40,6 @@ header p {
   font-weight: 1000;
 }
 
-a {
-  transition: color 1s;
-}
-
 header .menu {
   margin: 0 auto;
 
@@ -50,7 +48,7 @@ header .menu {
   padding: 15px;
 
   display: flex;
-  gap: 20px;
+
   gap: 40px;
   width: 400px;
   margin-top: 10px;
@@ -61,11 +59,8 @@ header .menu li {
   list-style-type: none;
   color: rgb(255, 255, 255);
 }
-
-header .menu li a img {
-  position: absolute;
-  left: 92%;
-  top: 25%;
+a {
+  transition: color 1s;
 }
 
 /* SURLIGNEMENT */
@@ -91,27 +86,29 @@ header .menu li a img {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
-/* SURLIGNEMENT BLANC PR LA PFP */
+/* SURLIGNEMENT BLANC POUR LA PFP */
 
-.pfp img {
+.pfp {
   position: relative;
-
-  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
 }
 
-.pfp img::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
-  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+.pfp::after {
+  content: "";
+  position: absolute;
   width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(circle at center, #fdfdfd 0%, #ffffff 100%);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  height: 2px;
+  bottom: -5px; /* distance sous l'image */
+  left: 15px;
+  background: radial-gradient(
+    circle at center,
+    hsl(0, 0%, 100%) 0%,
+    #000000 100%
+  );
+  transition: width 0.5s ease;
 }
 
-.pfp img:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+.pfp:hover::after {
+  width: 100%;
 }
 
 body {

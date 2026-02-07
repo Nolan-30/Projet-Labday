@@ -230,6 +230,27 @@ li {
   text-align: center;
 }
 
+.season-content h2 {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+.season-content h2::after {
+  content: "";
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 170px;
+  background: white;
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.season-content h2:hover::after {
+  width: 35%;
+}
+
 .description {
   color: #aeb4c0;
   font-size: 1rem;

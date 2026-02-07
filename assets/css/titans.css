@@ -13,7 +13,7 @@
 
 header {
   display: flex;
-  position: fixed;
+
   background: #000000;
   z-index: 1;
   top: 0;
@@ -44,10 +44,6 @@ header p {
   font-weight: 1000;
 }
 
-a {
-  transition: color 1s;
-}
-
 header .menu {
   margin: 0 auto;
 
@@ -56,7 +52,7 @@ header .menu {
   padding: 15px;
 
   display: flex;
-  gap: 20px;
+
   gap: 40px;
   width: 400px;
   margin-top: 10px;
@@ -67,11 +63,8 @@ header .menu li {
   list-style-type: none;
   color: rgb(255, 255, 255);
 }
-
-header .menu li a img {
-  position: absolute;
-  left: 92%;
-  top: 25%;
+a {
+  transition: color 1s;
 }
 
 /* SURLIGNEMENT */
@@ -96,6 +89,33 @@ header .menu li a img {
 .menu li a:hover::after {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
+
+/* SURLIGNEMENT BLANC POUR LA PFP */
+
+.pfp {
+  position: relative;
+}
+
+.pfp::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px; /* distance sous l'image */
+  left: 15px;
+  background: radial-gradient(
+    circle at center,
+    hsl(0, 0%, 100%) 0%,
+    #000000 100%
+  );
+  transition: width 0.5s ease;
+}
+
+.pfp:hover::after {
+  width: 100%;
+}
+
+/****************************** HEADER* ****************/
 
 .bg-black {
   background-color: black;

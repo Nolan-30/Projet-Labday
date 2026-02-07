@@ -38,6 +38,10 @@ header {
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
 }
 
+.menu li a {
+  color: yellow;
+}
+
 header img {
   margin-left: 30px;
   border-radius: 10px;
@@ -105,27 +109,29 @@ a {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
-/* SURLIGNEMENT BLANC PR LA PFP */
+/* SURLIGNEMENT BLANC POUR LA PFP */
 
-.pfp img {
+.pfp {
   position: relative;
-
-  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
 }
 
-.pfp img::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
-  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+.pfp::after {
+  content: "";
+  position: absolute;
   width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 0;
-  background: white;
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  height: 2px;
+  bottom: -5px; /* distance sous l'image */
+  left: 15px;
+  background: radial-gradient(
+    circle at center,
+    hsl(0, 0%, 100%) 0%,
+    #000000 100%
+  );
+  transition: width 0.5s ease;
 }
 
-.pfp img:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+.pfp:hover::after {
+  width: 100%;
 }
 
 .menu li a img {
