@@ -26,7 +26,7 @@ const gererChrono = () => {
   const zoneIndice = document.getElementById("indice");
   const zoneQuiz = document.getElementById("quiz");
 
-  // ÉTAPE 1 : Cacher les cartes et afficher l'indice
+  // Cacher les cartes et afficher l'indice
   conteneurCartes.style.display = "none";
   zoneIndice.style.display = "block";
 
@@ -35,7 +35,7 @@ const gererChrono = () => {
   tempsEcoule = 0;
 
   // Réinitialisation
-  tempsEcoule = 0;
+
   affichageChrono.innerText = "00:00";
   affichageChrono.style.display = "block";
 

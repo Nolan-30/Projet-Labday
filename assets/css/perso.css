@@ -35,7 +35,7 @@ body {
 
 header {
   display: flex;
-
+  position: fixed;
   background: #000000;
   z-index: 1;
   top: 0;
@@ -48,6 +48,14 @@ header {
 header img {
   margin-left: 30px;
   border-radius: 10px;
+}
+
+header img:hover {
+  transition: transform 1s ease-out;
+}
+
+header img:hover {
+  transform: scale(1.02);
 }
 
 header p {
@@ -67,18 +75,21 @@ header p {
 }
 
 header .menu {
+  /* position de la liste de la nav */
+  position: absolute;
+  top: -4px;
+
+  right: 50px;
+  left: 450px;
+
   margin: 0 auto;
-
   border-radius: 20px 20px 20px 20px;
-
   padding: 15px;
-
   display: flex;
-
   gap: 40px;
   width: 400px;
+  margin-bottom: 5%;
   margin-top: 10px;
-  margin-left: -95%;
 }
 
 header .menu li {

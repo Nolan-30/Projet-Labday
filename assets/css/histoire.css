@@ -9,7 +9,7 @@
 
 header {
   display: flex;
-
+  position: fixed;
   background: #000000;
   z-index: 1;
   top: 0;
@@ -22,6 +22,14 @@ header {
 header img {
   margin-left: 30px;
   border-radius: 10px;
+}
+
+header img:hover {
+  transition: transform 1s ease-out;
+}
+
+header img:hover {
+  transform: scale(1.02);
 }
 
 header p {
@@ -170,8 +178,10 @@ main {
 h1 {
   margin-top: 10%;
   margin-bottom: 5%;
-  font-family: "Cinzel", serif;
-  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 900;
+  font-size: 40px;
   color: var(--blanc-texte);
   margin-bottom: 15px;
   text-transform: uppercase;

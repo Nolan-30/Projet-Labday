@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
+body {
+  background-color: black;
+}
+
 /* --- HEADER --- */
 
 .degrader-blanc {
@@ -13,9 +17,18 @@
 
 header {
   display: flex;
+  position: fixed;
+  background: #000000;
+  z-index: 1;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(85, 85, 85, 0.489);
+}
+
+.menu li a {
+  color: yellow;
 }
 
 header img {
@@ -47,7 +60,7 @@ header .menu {
   padding: 15px;
 
   display: flex;
-  gap: 20px;
+
   gap: 40px;
   width: 400px;
   margin-top: 10px;
@@ -58,11 +71,8 @@ header .menu li {
   list-style-type: none;
   color: rgb(255, 255, 255);
 }
-
-header .menu li a img {
-  position: absolute;
-  left: 92%;
-  top: 25%;
+a {
+  transition: color 1s;
 }
 
 /* SURLIGNEMENT */
@@ -88,27 +98,50 @@ header .menu li a img {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
-/* SURLIGNEMENT BLANC PR LA PFP */
+/* SURLIGNEMENT BLANC POUR LA PFP */
 
-.pfp img {
+.pfp {
   position: relative;
-
-  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
 }
 
-.pfp img::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
-  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+.pfp::after {
+  content: "";
+  position: absolute;
   width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(circle at center, #fdfdfd 0%, #ffffff 100%);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
+  height: 2px;
+  bottom: -5px; /* distance sous l'image */
+  left: 15px;
+  background: radial-gradient(
+    circle at center,
+    hsl(0, 0%, 100%) 0%,
+    #000000 100%
+  );
+  transition: width 0.5s ease;
 }
 
-.pfp img:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+.pfp:hover::after {
+  width: 100%;
+}
+
+.menu li a img {
+  margin-left: 30%;
+}
+
+.presentation h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.presentation img {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* --- FIN DU HEADER --- */
+
+h1 {
+  margin-top: 5%;
 }
 
 .presentation h1 {
@@ -130,7 +163,7 @@ header .menu li a img {
 }
 
 body {
-  background: radial-gradient(circle at center, #2c2929 0%, #000000 100%);
+  background-color: black;
   font-family: "Lato", sans-serif;
   color: #ffffff;
   line-height: 1.6;
@@ -168,17 +201,17 @@ body {
 }
 
 /* --- BORDURES COLORÉES --- */
-.border-green {
-  border-left-color: #107c41;
+.border-white {
+  border-left-color: #fcfcfc;
 }
 .border-yellow {
-  border-left-color: #dcb12d;
+  border-left-color: #ecca64;
 }
-.border-blue {
-  border-left-color: #1e66f5;
+.border-grey {
+  border-left-color: #ababab;
 }
-.border-red {
-  border-left-color: #c92a2a;
+.border-orange {
+  border-left-color: #df7f02;
 }
 
 .season-thumbnail {
@@ -198,16 +231,56 @@ body {
   color: #ffffff;
 }
 
-.season-thumbnail span img {
+/* Etiquette saison 1 */
+.season-thumbnail .s1 img {
   transition: transform 1s ease-out;
   border-radius: 10px;
 }
-.season-thumbnail span img:hover {
+.season-thumbnail .s1 img:hover {
   display: flex;
   border-radius: 10px;
   transform: scale(1.05);
   /* petit effet doré sur les bordures qd on passe dessus*/
-  box-shadow: 0 0 10px rgb(241, 241, 241);
+  box-shadow: 0 0 10px #ababab;
+}
+
+/* Etiquette saison 2 */
+.season-thumbnail .s2 img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+}
+.season-thumbnail .s2 img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px #ecca64;
+}
+
+/* Etiquette saison 3 */
+.season-thumbnail .s3 img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+}
+.season-thumbnail .s3 img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Etiquette saison 4 */
+.season-thumbnail .s4 img {
+  transition: transform 1s ease-out;
+  border-radius: 10px;
+}
+.season-thumbnail .s4 img:hover {
+  display: flex;
+  border-radius: 10px;
+  transform: scale(1.05);
+  /* petit effet doré sur les bordures qd on passe dessus*/
+  box-shadow: 0 0 10px #df7f02;
 }
 /* --- CONTENU TEXTE --- */
 .season-content {
@@ -242,13 +315,13 @@ li {
   width: 0;
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
-  left: 170px;
+  left: 235px;
   background: white;
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
 .season-content h2:hover::after {
-  width: 35%;
+  width: 20%;
 }
 
 .description {
